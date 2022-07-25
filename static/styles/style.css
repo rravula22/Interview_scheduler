@@ -1,0 +1,10 @@
+h1 {
+    text-align: center;
+    background: bisque
+}
+nav {
+    text-align: right;
+}
+a {
+    padding: 20px;
+}

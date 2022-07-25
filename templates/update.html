@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        {% include "navbar.html" %}
+    </head>
+    <body>
+        <h1>Update Student</h1>
+        <form action="{{ url_for("updateRecord") }}" method="post">
+            <div class="form-group col-sm-6">
+                <select class="mdb-select md-form" searchable="Search Name" name="id">
+                    <option value="" disabled selected>Select Student Name</option>
+                    {% for student in studentList %}
+                    <option value="{{student.Id}}">{{student.name}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="form-group col-sm-6">
+                <label for="student_name">Student Name:</label>
+                <input type="text" class="form-control" name="name" placeholder="Enter Name of the Student">
+            </div>
+            <div class="form-group col-sm-6">
+                <label for="grade">Grade</label>
+                <input type="text" class="form-control" name="grade" placeholder="Enter Student Grade">
+            </div>
+            <div style="padding: 30px;">
+                <button type="submit" class="btn btn-primary col-sm-5">Update</button>
+            </div>  
+        </form>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <form action="{{ url_for("studentReg") }}" method="post">
+            <div class="form-group col-sm-6">
+              <label for="student_name">Student Name:</label>
+              <input type="text" class="form-control" name="name" placeholder="Enter Name of the Student">
+            </div>
+            <div class="form-group col-sm-6">
+              <label for="grade">Grade</label>
+              <input type="text" class="form-control" name="grade" placeholder="Enter Student Grade">
+            </div>
+            <div style="padding: 30px;">
+                <button type="submit" class="btn btn-primary col-sm-5">Add</button>
+            </div> 
+          </form>
+    </body>
+</html>
