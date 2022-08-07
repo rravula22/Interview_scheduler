@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <form class="form" action="{{ url_for('addRecord') }}" method="post">
+            <div class="form-group col-sm-6">
+              <label for="company">Company Name:</label>
+              <input type="text" class="form-control" name="company" placeholder="Enter Name of the Company">
+            </div>
+            <div class="form-group col-sm-6">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" name="email" placeholder="Enter emai">
+            </div>
+            <div class="form-group col-sm-6">
+              <label for="number">Number:</label>
+              <input type="number" class="form-control" name="number" placeholder="Enter Number">
+            </div>
+            <div class="form-group col-sm-6">
+              <label for="address">Address:</label>
+              <textarea class="form-control" rows="3" name="address" placeholder="Enter address"></textarea>
+            </div>
+            <div style="padding: 30px;">
+                <button type="submit" class="btn btn-primary col-sm-5">Add Record</button>
+            </div> 
+          </form>
+    </body>
+</html>

@@ -5,13 +5,13 @@
         {% include "navbar.html" %}
     </head>
     <body>
-        <h1>Delete Student</h1>
-        <form action="{{ url_for("deleteRecord") }}" method="post">
+        <h1>Delete Company</h1>
+        <form action="{{ url_for('deleteRecord') }}" method="post">
             <div class="form-group col-sm-6">
                 <select class="mdb-select md-form" searchable="Search Name" name="data">
-                    <option value="" disabled selected>Select Student Name</option>
-                    {% for student in studentList %}
-                    <option value="{{student.Id}}">{{student.name}}</option>
+                    <option value="" disabled selected>Select Company Name</option>
+                    {% for company in companyList %}
+                    <option value="{{company.id}}">{{company.company}}</option>
                     {% endfor %}
                 </select>
             </div>

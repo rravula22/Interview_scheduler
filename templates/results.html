@@ -5,20 +5,26 @@
         {% include "navbar.html" %}
     </head>
     <body>
-        <h2 style="text-align: center;">Students List</h2>
+        <h2 style="text-align: center;">Company List</h2>
         <table class="table">
             <thead>
                 <tr>
                     <th scope="col">ID</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Grade</th>
+                    <th scope="col">Company Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Number</th>
+                    <th scope="col">Address</th>
                 </tr>
             </thead>
             <tbody>
-                {% for student in studentList  %}
-                        <tr><td>{{ student.Id }}</td><td>{{ student.name }}</td><td  class="table-Primary">{{ student.grade }}</td></tr>
+                {% for company in companyList  %}
+                        <tr><td>{{ company.id }}</td><td>{{ company.company }}</td><td>{{ company.email }}</td><td>{{ company.number }}</td><td>{{ company.address }}</td>
+                        </tr>
                 {% endfor %}
             </tbody>
     </table>
     </body>
+    <script>
+
+    </script>
 </html>

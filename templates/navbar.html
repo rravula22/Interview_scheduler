@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>Student Grades</title>
+        <title>Homework-4</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     </head>
     <body>
-        <h1 style="text-align: center;">Student Grading System</h1>
+        <h1 style="text-align: center;">HomeWork-4</h1>
         <nav>
-            <a class="btn btn-primary" href="{{ url_for("Home") }}">Home </a> 
-            <a class="btn btn-primary" href="{{ url_for("results") }}">List Students</a>
-            <a class="btn btn-primary" href="{{ url_for("qualify") }}">Students Qualified</a>
-            <a class="btn btn-primary" href="{{ url_for("update") }}">Update Student</a>
-            <a class="btn btn-primary" href="{{ url_for("delete") }}">Delete Student</a>
+            <a class="btn btn-primary" href="{{ url_for('Home') }}">Home </a> 
+            <a class="btn btn-primary" href="{{ url_for('Home') }}">Create</a>
+            <a class="btn btn-primary" href="{{ url_for('results') }}">List Details</a>
+            <a class="btn btn-primary" href="{{ url_for('update') }}">Update</a>
+            <a class="btn btn-primary" href="{{ url_for('delete') }}">Delete</a>
         </nav>
     </body>
 </html>
