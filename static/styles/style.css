@@ -1,10 +1,11 @@
-h1 {
-    text-align: center;
-    background: bisque
+.body {
+  background-image: url("https://pyjamahr.com/wp-content/uploads/2022/08/Interview-scheduling.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
-nav {
-    text-align: right;
-}
-a {
-    padding: 20px;
+.form {
+  backface-visibility: initial;
+  background: linear-gradient(45deg, black, transparent);
+  align-items: center;
 }

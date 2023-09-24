@@ -1,18 +1,34 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <title>Homework-4</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    </head>
-    <body>
-        <h1 style="text-align: center;">HomeWork-4</h1>
-        <nav>
-            <a class="btn btn-primary" href="{{ url_for('Home') }}">Home </a> 
-            <a class="btn btn-primary" href="{{ url_for('Home') }}">Create</a>
-            <a class="btn btn-primary" href="{{ url_for('results') }}">List Details</a>
-            <a class="btn btn-primary" href="{{ url_for('update') }}">Update</a>
-            <a class="btn btn-primary" href="{{ url_for('delete') }}">Delete</a>
-        </nav>
-    </body>
+<head>
+    <title>Interview Scheduler</title>
+    <link rel="stylesheet" href="../static/styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light bg-background: aliceblue;">
+        <div class="container">
+            <a class="navbar-brand" href="#">Interview Scheduler</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('Home') }}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('results') }}">List Details</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('update') }}">Update</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('delete') }}">Delete</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</body>
 </html>

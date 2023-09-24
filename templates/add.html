@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="../static/styles/style.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
-    <body>
+    <body class="text-align-center">
         <form class="form" action="{{ url_for('addRecord') }}" method="post">
             <div class="form-group col-sm-6">
               <label for="company">Company Name:</label>
@@ -23,7 +24,8 @@
             </div>
             <div style="padding: 30px;">
                 <button type="submit" class="btn btn-primary col-sm-5">Add Record</button>
-            </div> 
+            </div>
           </form>
     </body>
 </html>
+
